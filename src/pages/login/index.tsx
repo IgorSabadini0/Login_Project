@@ -6,23 +6,22 @@ import { style } from "./styles";
 export default function login() {
     return (
         <View style={style.container}>
-            <View> {/* Logo */}
+            <View style={style.boxTop}>
                 <Image source={Logo} resizeMode="contain" />
-                <Text>Bem Vindo de Volta</Text>
+                <Text style={style.textTitle}>Bem Vindo de Volta</Text>
             </View>
 
-            <View> {/* input */}
-                <Text>Endenreço de E-mail</Text>
-                <TextInput></TextInput>
-                <Text>Senha</Text>
+            <View style={style.boxMid}>
+                <Text style={style.text}>Endenreço de E-mail</Text>
+                <TextInput style={style.input} placeholder="testedasilva@email.com"></TextInput>
+                <Text style={style.text}>Senha</Text>
+                <TextInput style={style.input} placeholder="Digite sua senha"></TextInput>
             </View>
 
-            <View> {/* footer */}
+            <View>
                 <Text>Bottom</Text>
             </View>
 
         </View>
     );
-
-
 }
